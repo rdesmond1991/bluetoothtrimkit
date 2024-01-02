@@ -1,0 +1,67 @@
+/* Reset some default browser styles */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set the background image */
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('paragliding_trim_website.png'); /* Replace 'background.jpg' with the path to your image */
+    background-size: cover; /* Adjust the image size to cover the entire viewport */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    background-attachment: fixed; /* Keep the background fixed as the user scrolls */
+    z-index: -1; /* Place the background behind other content */
+}
+
+/* Style your website content */
+.content {
+    position: relative;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3); /* You can adjust the background color opacity */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.centered-text {
+    text-align: center;
+}
+
+.fade-in-out {
+    animation: fade 5s infinite;
+}
+
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Additional styling for your website content */
+h1 {
+    font-size: 36px;
+    color: #ffffff;
+    letter-spacing: 5px;
+}
+
+p {
+    font-size: 18px;
+    color: #e2e2e2;
+    word-spacing: 3px;
+    letter-spacing: 5px;
+
+}
